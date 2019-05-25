@@ -1,0 +1,36 @@
+.button{
+    width: 150px;
+    height: 80px;
+    color:#fff;
+    background-color: darkcyan;
+    position: relative;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.button:before{
+    width: 140px;
+    height: 70px;
+    opacity: 0;
+    position: absolute;
+    content: '';
+    border:1px solid  #ffffff;
+    left: 5px;
+    top: 5px;
+    transition: .3s;
+    box-sizing: border-box;
+}
+
+.button:hover:before{
+    opacity: 1;
+}
+
+.button:active::before{
+    border-style: dashed;
+    border-style: double;
+    border-width: 4px;
+}
+
